@@ -508,7 +508,11 @@ footer .copyright{
     width:100%;
     text-align: center;
 }
+ /* shop page */
 
+  #page-header{
+    background-image: url(Images/w_interiors_banner_1.jpg);
+  }
 /* media queries */
 @media(max-width:799px){
     
