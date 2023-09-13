@@ -20,8 +20,8 @@
                 <li> <a href = "shop.html"> Shop</a></li>
                 <li> <a   href  = "blog.html"> Blog</a></li>
                 <li> <a  href = "about.html"> About</a></li>
-                <li> <a class = "active" href = "contact.html">Contact</a></li>
-                <li id ="lg-bag"> <a href = "cart.html"> <i class="fa-solid fa-bag-shopping"></i></a></li>
+                <li> <a  href = "contact.html">Contact</a></li>
+                <li id ="lg-bag"> <a class = "active" href = "cart.html"> <i class="fa-solid fa-bag-shopping"></i></a></li>
       
                 <a href = '#' id = "close"><i class="fa-solid fa-xmark" style="color: #100f0f"></i></a>
             </ul>
@@ -44,87 +44,74 @@
    
   </section> 
   
-  <section id = "contact-details" class="section-p1 section-m1">
-    <div class ="details">
-        <span>GET IN TOUCH </span>
-        <h2>Visit our headquarters & contact us </h2>
-        <h3>Head Office </h3>
-    
+ <section id = "cart" class="section-p1">
+    <table width = 100%>
+        <thead>
+            <tr>
+                <td>Remove</td>
+                <td>Images</td>
+                <td>Product</td>
+                <td>Price</td>
+                <td>Quantity</td>
+                <td>Subtotal</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <a href ="#" ><i class = "far fa-times-circle"></i></a></td>
+                <td><img src="Images/img32.jpg"></td>
+                <td>Lighting Candles</td>
+                <td>$34</td>
+                <td><input type="number" value="1"></td>
+                <td>$34</td>
+            </tr>
+            <tr>
+                <td> <a href ="#" ><i class = "far fa-times-circle"></i></a></td>
+                <td><img src="Images/img10.jpg"></td>
+                <td>Check shape designer Pottery </td>
+                <td>$124</td>
+                <td><input type="number" value="1"></td>
+                <td>$124</td>
+            </tr>
+            <tr>
+                <td> <a href ="#" ><i class = "far fa-times-circle"></i></a></td>
+                <td><img src="Images/img16.jpg"></td>
+                <td>Lighting Glass Chandelier</td>
+                <td>$323</td>
+                <td><input type="number" value="1"></td>
+                <td>$323</td>
+            </tr>
+        </tbody>
+    </table>
+ </section>
+
+ <section id = "cart-add" class = "section-p1">
+  <div id="coupon">
+    <h3>Apply Coupon</h3>
     <div>
-        <li>
-            <i class="fa-solid fa-map-location-dot"></i>
-            <p>SECTOR-33, INFOCITY,  PHASE-II,GURGAON HARYANA, 122001</p>
-        </li>
-        <li>
-            <i class="fa-regular fa-envelope"></i>
-            <p>styles@gmail.com</p>
-        </li>
-        <li>
-            <i class="fa-solid fa-phone-volume"></i>
-            <p>7890345####</p>
-        </li>
-        <li>
-            <i class="fa-regular fa-clock"></i>
-            <p>Monday to Saturday: 9:00 am to 8:00 pm</p>
-        </li>
-       </div>
+        <input type ="text" placeholder="Enter your Coupon">
+        <button class = "normal">Apply</button>
     </div>
-   <div class="map">
-    <!-- iframe tag is used to just embeded the tag -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224357
-        .50123488688!2d77.2370150697077!3d28.522102351920715!2m3!1f0!2f0!3f0!3m2!
-        1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2s
-        Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1694542559112!5m2!1sen!2sin"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-         referrerpolicy="no-referrer-when-downgrade"></iframe>
-   </div>
-  </section>
-
-  <section id ="form-details" >
-    <form>
-      <span>LEAVE A MESSAGE </span>
-      <h2>We love to hear from you</h2>
-      <input type="text" placeholder="Your Name">
-      <input type="text" placeholder="E-mail">
-      <input type="text" placeholder="Subject">
-      <textarea name ="" id ="" cols ="" rows ="" placeholder="your message"></textarea>
-      <button class = "normal">Submit</button>
-
-    </form>
-    <div class="people">
-      <div>
-        <img src="Images/1.png">
-        <p><span>David Deem </span> Senior Executive Manager  <br> Phone : +9980#####
-        <br> E-mail: contact@gmail.com
-        </p>
-      </div>
-      <div>
-        <img src="Images/2.png">
-        <p><span>Cha Sung Hoo </span> Senior Executive Manager  <br> Phone : +9980#####
-        <br> E-mail: contact@gmail.com
-        </p>
-      </div>
-      <div>
-        <img src="Images/3.png">
-        <p><span>Kim Hari  </span> Senior Executive Manager  <br> Phone : +9980#####
-        <br> E-mail: contact@gmail.com
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id = "newsletter" class ="section-p1 section-m1">
-    <div class = "newstext">
-      <h4>Sign up for Newsletters</h4>
-      <p>Get E-mail updates about our latest shop and<span> special offers.</span></p>
-  
-    </div>
-    <div class ="form">
-      <input type="text" placeholder="Your email addres">
-      <button class ="normal">Sign Up</button>
-    </div>
-  </section>
-  
+  </div>
+  <div id="subtotal">
+    <h3>Card Totals</h3>
+    <table>
+        <tr>
+            <td>Cart Subtotal</td>
+            <td>$ 213</td>
+        </tr>
+        <tr>
+            <td>Shipping</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Total</strong></td>
+            <td><strong>$ 213</strong></td>
+        </tr>
+    </table>
+    <button class = "normal">Proceed to check out </button>
+  </div>
+ </section>
 
 <footer class ="section-p1">
   <div class=""col>
